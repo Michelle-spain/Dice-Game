@@ -1,0 +1,115 @@
+body {
+    width: 600px;
+    height: 540px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid black;
+    background: lightgray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: white;
+    /* text-align: center; */
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
+    color: black;
+    box-shadow: 10px 10px 8px #888888;
+    
+}
+
+#message {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    background-color: #A2B5BB;
+    /* text-align: center; */
+    font-size: 80px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin-top: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+ 
+}
+
+#buttonContainer {
+   display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#rollBtn {
+    background-color: red;
+}
+
+#resetBtn {
+    background-color: #F5EDDC;
+    color: black;
+    display: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.active { 
+box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75); 
+}
+
+.shake {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(4deg);
+    }
+    10% {
+        transform: rotate(-4deg);
+    }
+    25% {
+        transform: rotate(4deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    75% {
+        transform: rotate(-4deg);
+    }
+    90% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+
+}
